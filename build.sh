@@ -4,7 +4,7 @@ err() { echo "ERROR: $*"; exit 1; }
 
 make_clean() {
     rm -rf debian/.debhelper/ debian/files debian/changelog debian/control debian/cuda-keyring/
-    rm -f debian/cuda-keyring.debhelper.log debian/cuda-keyring.install debian/cuda-keyring.substvars
+    rm -f debian/cuda-keyring.debhelper.log debian/cuda-keyring.install debian/cuda-keyring.postinst debian/cuda-keyring.substvars
     rm -f debian/cuda*.list debian/cuda*.gpg debian/cuda*pin*
 }
 
