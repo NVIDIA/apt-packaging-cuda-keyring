@@ -1,0 +1,5 @@
+cuda-keyring (#VERSION#-#REVISION#) stable; urgency=low
+
+  * CUDA keyring package (2022)
+
+ -- cudatools <cudatools@nvidia.com>  #TIMESTAMP#

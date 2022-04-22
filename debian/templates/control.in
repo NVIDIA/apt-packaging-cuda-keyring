@@ -1,0 +1,12 @@
+Source: cuda-keyring
+Maintainer: cudatools <cudatools@nvidia.com>
+Section: multiverse/devel
+Priority: optional
+Standards-Version: 3.8.0
+
+Package: cuda-keyring
+Architecture: all
+Depends: ${misc:Depends}
+Description: GPG keyring for the CUDA repository
+  Enrolls public key: #PUBKEY# (#YEAR#)
+  and enables repo: #DISTRO#/#ARCH#
