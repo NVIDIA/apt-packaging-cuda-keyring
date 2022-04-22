@@ -5,11 +5,11 @@ set -e
 case "$1" in
     configure)
         keyexists="$(GNUPGHOME=/dev/null gpg /etc/apt/trusted.gpg 2>/dev/null | grep -i 7fa2af80)" || true
-        if [ ! -f "/etc/apt/trusted.gpg" ] || [ ! "$keyexists" ]; then
+        if [ -f "/etc/apt/trusted.gpg" ] && [ "$keyexists" ]; then
             removeKey="sudo apt-key del 7fa2af80"
             cat <<EOM
 
-A deprecated public CUDA GPG key appear to be installed.
+A deprecated public CUDA GPG key appears to be installed.
 To remove the key, run this command:
 $removeKey
 
