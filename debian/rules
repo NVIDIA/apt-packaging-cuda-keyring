@@ -4,7 +4,7 @@ DH_VERBOSE := 1
 VERSION         ?= 1.0
 REVISION        ?= 1
 TIMESTAMP       := $(shell date -R)
-YEAR            := $(shell date +%Y)
+YEAR            ?= $(shell date +%Y)
 PUBKEY          ?= $(shell GNUPGHOME=/dev/null gpg --list-packets debian/cuda-archive-keyring.gpg | grep 'keyid:' | cut -d: -f2 | rev | cut -c -8 | rev)
 PINFILE         := $(shell test -f debian/cuda-repository-pin-600 && echo 1)
 DISTRO          ?= $(shell grep -oP '(?<=^ID=).*|(?<=^VERSION_ID=).*' /etc/os-release | paste -sd '\0')
