@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Copyright 2022, NVIDIA Corporation
+# SPDX-License-Identifier: MIT
 
 err() { echo "ERROR: $*"; exit 1; }
 
