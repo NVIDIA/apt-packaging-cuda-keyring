@@ -92,7 +92,7 @@ apt-get install debhelper devscripts dpkg-dev make
 
 ```shell
 usage: build.sh <keyring.gpg> [priority.pin]
-       DISTRO=[ubuntu2204|ubuntu2004] ARCH=[x86_64|sbsa|aarch64] build.sh
+       DISTRO=[ubuntu2204|ubuntu2004] ARCH=[x86_64|sbsa|arm64] build.sh
        DISTRO=[ubuntu2204|ubuntu2004] ARCH=[cross-linux-sbsa|cross-linux-aarch64] build.sh
        DISTRO=[ubuntu1804|ubuntu1604] ARCH=[x86_64|ppc64el|sbsa] build.sh
        DISTRO=[debian11|debian10|wsl-ubuntu] ARCH=x86_64 build.sh
